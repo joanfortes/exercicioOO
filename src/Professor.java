@@ -8,6 +8,46 @@
  *
  * @author Joan
  */
-public class Professor {
+public class Professor extends Pessoa{
+    private String siape;
+
+    public Professor(String nome, String cpf, int dataNascimento,String siape) {
+        super(nome, cpf, dataNascimento);
+        this.siape = siape;
+    }
+
+    public String getSiape() {
+        return siape;
+    }
+
+    public void setSiape(String siape) {
+        this.siape = siape;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public int getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(int dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+    
+    
     
 }
