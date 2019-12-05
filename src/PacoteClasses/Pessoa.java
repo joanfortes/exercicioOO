@@ -1,3 +1,7 @@
+package PacoteClasses;
+
+import java.util.Date;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,11 +14,13 @@
  */
 public abstract class Pessoa {
     public String nome,cpf;
-    public int dataNascimento;
+    public Date dataNascimento;
 
-    public Pessoa(String nome, String cpf, int dataNascimento) {
-        this.nome = nome;
-        this.cpf = cpf;
+    public Date getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(Date dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
@@ -33,17 +39,8 @@ public abstract class Pessoa {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
-
-    public int getDataNascimento() {
-        return dataNascimento;
-    }
-
-    public void setDataNascimento(int dataNascimento) {
-        this.dataNascimento = dataNascimento;
-    }
     
-    public void getIdade(){
-        
-    }
+    public abstract int getIdade();
+    
     
 }
